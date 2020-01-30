@@ -27,16 +27,16 @@ class EventTest < Minitest::Test
     event = Event.new("Curling", [24, 30, 18, 20, 41])
     assert_equal 18, event.min_age
   end
+  def test_event_has_average_age
+    event = Event.new("Curling", [24, 30, 18, 20, 41])
+    assert_equal 26.6, event.average_age
+  end
   
-
 end
 
 
 
 
-  #
-  # pry(main)> event.average_age
-  # #=> 26.6
-  #
+
   # pry(main)> event.standard_deviation_age
   # #=> 8.28
