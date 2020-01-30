@@ -4,6 +4,7 @@ class Event
 
   def initialize(name, ages)
     @name = name
-    @ages = []
+    @ages = ages
   end
+
 end
