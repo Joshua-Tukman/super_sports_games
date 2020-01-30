@@ -14,7 +14,11 @@ class Event
         oldest = age
       end
     end
-    oldest 
+    oldest
+  end
+ 
+  def min_age
+    @ages.min
   end
 
 end
