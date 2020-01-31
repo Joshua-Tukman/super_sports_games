@@ -3,6 +3,7 @@ require 'minitest/pride'
 require './lib/games'
 require './lib/event'
 
+
 class EventTest < Minitest::Test
 
   def test_event_exists
@@ -31,7 +32,10 @@ class EventTest < Minitest::Test
     event = Event.new("Curling", [24, 30, 18, 20, 41])
     assert_equal 26.6, event.average_age
   end
-  
+  def test_event_has_standard_deviation_age
+    event = Event.new("Curling", [24, 30, 18, 20, 41])
+    assert_equal 8.28, event.standard_deviation_age
+  end
 end
 
 
